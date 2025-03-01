@@ -31,7 +31,8 @@ export const createVerification = async (_, { email }) => {
   }
 
   try {
-    const verificationCode = crypto.randomInt(100000, 999999).toString();
+    // const verificationCode = crypto.randomInt(100000, 999999).toString();
+    const verificationCode = "123456";
 
     const vertificationToken = new Verifications({
       email,
